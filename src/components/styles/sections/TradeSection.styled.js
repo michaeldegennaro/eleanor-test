@@ -126,7 +126,7 @@ export const SelectInfoContainer = styled.section`
     font-size: 1.1vw;
   }
   @media (max-width: 1070px) {
-    width: 100vw;
+    width: 90vw;
     left: 4.6vw;
     top: -1vw;
     h1 {
@@ -134,7 +134,7 @@ export const SelectInfoContainer = styled.section`
       line-height: 10vw;
       font-size: 10vw;
       font-weight: 100;
-      width: 900px;
+      width: 400px;
       width: 79vw;
     }
     h2 {
@@ -142,7 +142,7 @@ export const SelectInfoContainer = styled.section`
       line-height: 6vw;
       font-weight: 50;
       bottom: 20px;
-      width: 90vw;
+      width: 85vw;
       font-weight: 100;
     }
   }

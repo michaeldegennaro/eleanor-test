@@ -48,6 +48,7 @@ export const StyledBox = styled.article`
     position: relative;
     top: 15vw;
     left: 6vw;
+    width: 85vw;
   }
   @media (max-width: 1070px) {
     background-size: 22vw;

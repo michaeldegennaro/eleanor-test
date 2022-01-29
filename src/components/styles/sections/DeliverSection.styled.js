@@ -55,7 +55,7 @@ export const DeliverInfoContainer = styled.section`
       line-height: 10vw;
       font-size: 10vw;
       font-weight: 100;
-      width: 100vw;
+      width: 90vw;
       white-space: wrap;
       bottom: 200px;
     }

@@ -28,9 +28,11 @@ export const SelectSection = () => {
   };
 
   useEffect(() => {
-    gsap.set(".info-container", { opacity: 0, x: "10%" });
+    if (size.width > 1070) {
+      gsap.set(".info-container", { opacity: 0, x: "10%" });
+      gsap.set(".car-picture", { opacity: 0, x: "50%" });
+    }
     gsap.set(".header, .text", { opacity: 0, y: "-50%" });
-    gsap.set(".car-picture", { opacity: 0, x: "50%" });
     gsap.set(".car-info, .favicon", { opacity: 0, y: "-10%" });
   }, []);
 

@@ -98,7 +98,7 @@ export const CustomerInfoContainer = styled.section`
     }
   }
   @media (max-width: 1070px) {
-    width: 100vw;
+    width: 90vw;
     left: 4.6vw;
     top: -1vw;
     h1 {

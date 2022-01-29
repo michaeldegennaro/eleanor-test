@@ -19,6 +19,10 @@ export const DeliverSection = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    if (size.width > 1070) {
+      gsap.set(".map", { opacity: 0, x: "50%" });
+      gsap.set(".car-deliver", { opacity: 0, x: "-50%" });
+    }
     gsap.set(
       ".header-deliver, .text-deliver, .phone-deliver, .shadow-deliver",
       {
@@ -26,8 +30,6 @@ export const DeliverSection = () => {
         y: "-50%",
       }
     );
-    gsap.set(".map", { opacity: 0, x: "50%" });
-    gsap.set(".car-deliver", { opacity: 0, x: "-50%" });
   }, []);
 
   useEffect(() => {
