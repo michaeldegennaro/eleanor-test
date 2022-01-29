@@ -24,13 +24,13 @@ export const DeliverInfoContainer = styled.section`
   width: 32%;
   height: 38vw;
   color: ${({ theme }) => theme.colors.navyBlue};
-  text-transform: uppercase;
   position: absolute;
   top: 18vw;
   left: 4vw;
   text-align: start;
   h1 {
     font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
     letter-spacing: -0.1rem;
     line-height: 6vw;
     font-size: 6.1vw;
@@ -39,10 +39,11 @@ export const DeliverInfoContainer = styled.section`
     white-space: wrap;
   }
   h2 {
-    font-family: "Inter", sans-serif;
+    font-family: Optima, sans-serif;
     font-size: 1.1vw;
-    width: 290px;
-    font-weight: lighter !important;
+    line-height: 2vw;
+    width: 400px;
+    font-weight: 100;
     position: relative;
     bottom: 50px;
     color: black;
@@ -59,7 +60,7 @@ export const DeliverInfoContainer = styled.section`
       bottom: 200px;
     }
     h2 {
-      font-size: 2.5vw;
+      font-size: 3.5vw;
       font-weight: 50;
       width: 90vw;
       line-height: 6vw;
@@ -70,7 +71,13 @@ export const DeliverInfoContainer = styled.section`
   }
 `;
 
-export const ImageContainer = styled.section``;
+export const ImageContainer = styled.section`
+  @media (max-width: 1070px) {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 100vw;
+  }
+`;
 
 export const PhoneWrapper = styled.div`
   background: url("./images/deliveryImage.png") center no-repeat;
@@ -85,18 +92,17 @@ export const PhoneWrapper = styled.div`
     left: 64vw;
   }
   @media (max-width: 1070px) {
-    left: 30vw;
-    top: 35vw;
+    position: static;
+    width: 40vw;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: -55vw;
   }
   @media (max-width: 800px) {
-    top: 35vw;
-    height: 60vh;
-    left: 18vw;
+    margin-bottom: -25vw;
   }
   @media (max-width: 610px) {
-    left: 11vw;
-    height: 40vh;
-    top: 23vw;
+    margin-bottom: 40vw;
   }
 `;
 

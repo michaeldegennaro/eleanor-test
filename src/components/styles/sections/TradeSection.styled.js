@@ -24,7 +24,6 @@ export const StyledTradeSection = styled.section`
 
 export const CarImageContainer = styled.section`
   background: url("./images/porsche-head.png") center no-repeat;
-  background-size: contain;
   width: 32%;
   height: 820px;
   background-color: ${({ theme }) => theme.colors.yellow};
@@ -34,13 +33,20 @@ export const CarImageContainer = styled.section`
   left: -100px;
   margin: 200px;
   @media (max-width: 1070px) {
-    top: 30vw;
+    background-size: 90vw;
+    top: 50vw;
     width: 80vw;
     left: -200px;
-    height: 105vw;
+    height: 980px;
   }
   @media (max-width: 800px) {
+    top: 40vw;
+  }
+  @media (max-width: 600px) {
     top: 20vw;
+  }
+  @media (max-width: 600px) {
+    height: 680px;
   }
 `;
 
@@ -48,32 +54,31 @@ export const PhoneWrapper = styled.div`
   background: url("./images/your-vehicle-phone.png") center no-repeat;
   position: absolute;
   background-size: contain;
-  width: 341px;
+  width: 20vw;
   height: 77vh;
-  left: 16vw;
   top: 7vh;
+  right: -5vw;
   z-index: 4;
   @media (max-width: 1070px) {
-    background-size: 30vw;
-    left: 60vw;
-    top: -200px;
-    height: 150vh;
+    background-size: 32vw;
+    left: 50vw;
+    top: -20vw;
+    height: 1400px;
+    width: 40vw;
   }
   @media (max-width: 800px) {
-    background-size: 35vw;
-    left: 370px;
-    top: -300px;
-  }
-  @media (max-width: 700px) {
-    left: 320px;
+    left: 40vw;
+    height: 1400px;
+    background-size: 40vw;
+    top: -30vw;
+    width: 60vw;
   }
   @media (max-width: 600px) {
-    left: 250px;
-    top: -380px;
-  }
-  @media (max-width: 500px) {
-    left: 180px;
-    top: -420px;
+    left: 40vw;
+    height: 1400px;
+    background-size: 230px;
+    top: -350px;
+    width: 60vw;
   }
 `;
 
@@ -89,6 +94,7 @@ export const Shadow = styled.div`
   filter: blur(41.45px);
   border-radius: 35px;
   z-index: 3;
+  display: none;
   @media (max-width: 1070px) {
     display: none;
   }
@@ -97,14 +103,13 @@ export const Shadow = styled.div`
 export const SelectInfoContainer = styled.section`
   width: 32%;
   color: ${({ theme }) => theme.colors.navyBlue};
-  text-transform: uppercase;
   position: absolute;
   top: 200px;
   left: 57vw;
   text-align: start;
-
   h1 {
     font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
     letter-spacing: -0.1rem;
     line-height: 6vw;
     font-size: 6.1vw;
@@ -113,7 +118,7 @@ export const SelectInfoContainer = styled.section`
     white-space: wrap;
   }
   h2 {
-    font-family: "Inter", sans-serif;
+    font-family: Optima, sans-serif;
     font-weight: lighter !important;
     position: relative;
     bottom: 50px;
@@ -133,9 +138,10 @@ export const SelectInfoContainer = styled.section`
       width: 79vw;
     }
     h2 {
-      font-size: 2.8vw;
+      font-size: 3.5vw;
+      line-height: 6vw;
       font-weight: 50;
-      bottom: 40px;
+      bottom: 20px;
       width: 90vw;
       font-weight: 100;
     }

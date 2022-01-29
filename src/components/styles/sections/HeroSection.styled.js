@@ -44,7 +44,7 @@ export const Heading = styled.header`
 export const HeroContent = styled.section`
   width: 100%;
   max-width: 58ox;
-  color: ${({ theme }) => theme.colors.white};
+  color: white;
   text-transform: uppercase;
   position: absolute;
   h1 {
@@ -93,20 +93,27 @@ export const HeroContent = styled.section`
     }
     p {
       left: 10vw;
+      width: 300px;
     }
   }
 `;
 
 export const StyledArrowDown = styled.a`
   position: absolute;
-  bottom: 147px;
+  bottom: 124px;
   left: 370px;
   svg {
     font-size: 30px;
     color: #414a69;
   }
   @media (max-width: 1030px) {
-    left: 70vw;
+    left: 40vw;
+  }
+  @media (max-width: 800px) {
+    left: 65vw;
+  }
+  @media (max-width: 800px) {
+    left: 75vw;
   }
 `;
 

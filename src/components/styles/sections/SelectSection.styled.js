@@ -3,8 +3,7 @@ import styled, { keyframes } from "styled-components";
 export const StyledSelectSection = styled.section`
   width: 100%;
   margin-top: 20px;
-  height: 95vh;
-  position: relative;
+  height: 90vh;
   text-align: start;
   .flipped {
     -webkit-transform: scaleX(-1);
@@ -34,34 +33,45 @@ export const StyledSelectSection = styled.section`
 
 export const CarInfoContainer = styled.section`
   width: 32%;
-  height: 38vw;
+  height: 37vw;
   background-color: ${({ theme }) => theme.colors.yellow};
   text-transform: uppercase;
   position: relative;
   top: 260px;
   left: 150px;
   font-family: "Bebas Neue", cursive;
+  h1,
+  p,
+  .favicon {
+    position: absolute;
+    left: 7vw;
+  }
   h1 {
     font-size: 4vw;
     font-weight: 100;
-    position: relative;
-    left: 130px;
+    top: 2vw;
   }
   p {
     font-size: 1.1vw;
-    line-height: 20px;
     color: #4b5168;
-    top: -6vw;
-    position: relative;
-    left: 130px;
+    top: 9.5vw;
   }
   h3 {
+    position: absolute;
     font-size: 2.4vw;
     font-weight: 100;
     line-height: 20px;
-    position: relative;
-    left: 210px;
     bottom: 20px;
+    left: 12.5vw;
+  }
+  .car-info-mpg {
+    top: 13.7vw;
+  }
+  .car-info-speed {
+    top: 17.3vw;
+  }
+  .car-info-hp {
+    top: 20.7vw;
   }
   .car-picture {
     position: absolute;
@@ -69,28 +79,18 @@ export const CarInfoContainer = styled.section`
     left: 90px;
   }
   .favicon {
-    height: 25px;
-    position: relative;
-    left: 130px;
-    top: 2.7vw;
+    height: 1.4vw;
   }
-  .item-1,
-  .item-2,
-  .item-3 {
-    position: relative;
-    bottom: 80px;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
+  .mpg {
+    top: 16vw;
   }
-  .item-1 {
-    bottom: 5vw;
+  .speed {
+    top: 19.5vw;
   }
-  .item-2 {
-    bottom: 9vw;
+  .hp {
+    top: 23vw;
   }
-  .item-3 {
-    bottom: 13vw;
-  }
+
   @media (max-width: 1620px) {
     height: 650px;
     .car-picture {
@@ -104,69 +104,44 @@ export const CarInfoContainer = styled.section`
     height: 79vw;
     top: 75vw;
     left: 2.5vw;
-    article {
-      position: relative;
-      top: -1vw;
-    }
     h1 {
-      font-size: 9vw;
-      top: -11vw;
-      left: 10vw;
+      font-size: 8vw;
     }
     p {
-      font-size: 4vw;
-      top: -24vw;
-      left: 10vw;
+      font-size: 3.1vw;
+      top: 15vw;
     }
     h3 {
-      font-size: 8vw;
-      font-weight: 100;
-      line-height: 20px;
-      position: relative;
-      left: 35vw;
-      bottom: 20px;
+      font-size: 7.4vw;
+      left: 29.5vw;
+    }
+    .car-info-mpg {
+      top: 24.7vw;
+    }
+    .car-info-speed {
+      top: 37.3vw;
+    }
+    .car-info-hp {
+      top: 50.7vw;
     }
     .favicon {
-      height: 25px;
-      position: relative;
-      left: 16vw;
-      top: 9vw;
+      height: 5.3vw;
     }
-    .item-1,
-    .item-2,
-    .item-3 {
-      left: -6vw;
+    .mpg {
+      top: 30.5vw;
     }
-    .item-1 {
-      bottom: 25vw;
+    .speed {
+      top: 42.5vw;
     }
-    .item-2 {
-      bottom: 32vw;
-    }
-    .item-3 {
-      bottom: 39vw;
+    .hp {
+      top: 56.5vw;
     }
     .car-picture {
       left: 50px;
-
-      top: 45vw;
+      top: 65vw;
       width: 85vw;
       height: 26vw;
     }
-  }
-  @media (max-width: 800px) {
-    article {
-      position: relative;
-      top: -50px;
-  }
-  .item-1 {
-    bottom: 30vw;
-  }
-  .item-2 {
-    bottom: 42vw;
-  }
-  .item-3 {
-    bottom: 54vw;
   }
 `;
 
@@ -174,7 +149,6 @@ export const SelectInfoContainer = styled.section`
   width: 32%;
   height: 38vw;
   color: ${({ theme }) => theme.colors.navyBlue};
-  text-transform: uppercase;
   position: relative;
   bottom: 25vw;
   left: 55vw;
@@ -182,6 +156,7 @@ export const SelectInfoContainer = styled.section`
 
   h1 {
     font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
     letter-spacing: -0.1rem;
     line-height: 6vw;
     font-size: 6.1vw;
@@ -190,7 +165,8 @@ export const SelectInfoContainer = styled.section`
     white-space: wrap;
   }
   h2 {
-    font-family: "Inter", sans-serif;
+    font-family: Optima, sans-serif;
+    line-height: 1.4vw;
     color: black;
     font-weight: lighter !important;
     position: relative;
@@ -208,11 +184,11 @@ export const SelectInfoContainer = styled.section`
       font-weight: 100;
       width: 90vw;
       white-space: wrap;
-      width: 70%;
+      width: 70vw;
       bottom: 20px;
     }
     h2 {
-      font-size: 2.5vw;
+      font-size: 3.5vw;
       font-weight: 50;
       line-height: 6vw;
       font-weight: 100;

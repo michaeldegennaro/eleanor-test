@@ -41,7 +41,6 @@ export const HeroSection = () => {
         <StyledArrowDown href="#about">
           <HiOutlineArrowNarrowRight className="hero-content" size={60} />
         </StyledArrowDown>
-        <div></div>
       </HeroContent>
       <ImageWrapper className="mobile-image"></ImageWrapper>
       <CarWrapper
@@ -64,11 +63,11 @@ export const HeroSection = () => {
       />
       <CarWrapper
         className="car-image"
-        left={size.width > 1030 ? 20 : 35}
+        left={size.width > 1030 ? 20 : 31}
         height={620}
         z="1"
         images="car3-desktop.png"
-        size={40}
+        size={39}
         top={size.width > 1030 ? 45 : 38}
       />
       <Shadow className="shadow" />

@@ -13,10 +13,10 @@ export const StyledCustomerSection = styled.section`
     top: 420vw;
   }
   @media (max-width: 800px) {
-    top: 250vw;
+    top: 350vw;
   }
   @media (max-width: 600px) {
-    top: 110vw;
+    top: 140vw;
   }
 `;
 
@@ -35,7 +35,6 @@ export const CustomerImageContainer = styled.section`
   @media (max-width: 1070px) {
     background-size: 45vw;
     top: 58vw;
-    width: 100vw;
     left: -200px;
     height: 105vw;
   }
@@ -64,7 +63,7 @@ export const CustomerInfoContainer = styled.section`
   }
   h2,
   .quote {
-    font-family: "Inter", sans-serif;
+    font-family: Optima, sans-serif;
     font-size: 1vw;
     color: black;
     font-weight: lighter !important;
@@ -139,8 +138,13 @@ export const CustomerInfoContainer = styled.section`
   @media (max-width: 600px) {
     .customer-arrow {
       top: 71.6vw;
-
       left: 48vw;
+    }
+  }
+  @media (max-width: 500px) {
+    .customer-arrow {
+      top: 71.9vw;
+      left: 65vw;
     }
   }
 `;

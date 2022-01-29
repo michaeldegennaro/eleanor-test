@@ -14,10 +14,10 @@ export const StyledBoxSection = styled.section`
     flex-wrap: wrap;
   }
   @media (max-width: 800px) {
-    top: 70vw;
+    top: 170vw;
   }
   @media (max-width: 600px) {
-    top: -25vw;
+    top: 25vw;
   }
 `;
 
@@ -36,7 +36,7 @@ export const StyledBox = styled.article`
     font-weight: 100;
   }
   p {
-    font-family: "Inter", sans-serif;
+    font-family: Optima, sans-serif;
     font-size: 0.9vw;
     width: 290px;
     font-weight: lighter;
@@ -55,9 +55,13 @@ export const StyledBox = styled.article`
     height: 90vw;
     margin-bottom: 50px;
     h1 {
+      position: relative;
+      bottom: 55px;
       font-size: 9vw;
     }
     p {
+      position: relative;
+      bottom: 15vw;
       font-size: 3.5vw;
       width: 80vw;
     }
