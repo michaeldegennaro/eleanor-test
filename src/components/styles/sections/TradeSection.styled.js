@@ -56,7 +56,7 @@ export const PhoneWrapper = styled.div`
   background-size: contain;
   width: 20vw;
   height: 77vh;
-  top: 7vh;
+  top: 5vh;
   right: -5vw;
   z-index: 4;
   @media (max-width: 1070px) {
