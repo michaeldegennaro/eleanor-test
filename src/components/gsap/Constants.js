@@ -6,12 +6,12 @@ const boilerplateTrigger = {
 
 export const scrollTriggerSelect = {
   ...boilerplateTrigger,
-  trigger: ".info-container",
+  trigger: ".header",
 };
 
 export const scrollTriggerDeliver = {
   ...boilerplateTrigger,
-  trigger: ".text-deliver",
+  trigger: ".header-deliver",
 };
 
 export const scrollTriggerTrade = {

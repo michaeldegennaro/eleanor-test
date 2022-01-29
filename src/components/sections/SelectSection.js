@@ -73,7 +73,10 @@ export const SelectSection = () => {
 
           <img className="favicon hp" src="./images/hp.png" />
           <h3 className="car-info-hp a">{currentCar.speed}</h3>
-          <img className="car-picture" src={currentCar.picture} />
+          <img
+            className={`car-picture ${currentCar.name}`}
+            src={currentCar.picture}
+          />
         </article>
       </CarInfoContainer>
       <SelectInfoContainer>

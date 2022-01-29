@@ -73,9 +73,14 @@ export const CarInfoContainer = styled.section`
   .car-info-hp {
     top: 20.7vw;
   }
-  .car-picture {
+  .porsche {
     position: absolute;
     top: 31vw;
+    left: 90px;
+  }
+  .land-rover {
+    position: absolute;
+    top: 28vw;
     left: 90px;
   }
   .favicon {
@@ -93,10 +98,15 @@ export const CarInfoContainer = styled.section`
 
   @media (max-width: 1620px) {
     height: 650px;
-    .car-picture {
+    .porsche {
       top: 550px;
       width: 40vw;
       height: 12vw;
+    }
+    .land-rover {
+      top: 510px;
+      width: 40vw;
+      height: 16vw;
     }
   }
   @media (max-width: 1070px) {
@@ -136,11 +146,17 @@ export const CarInfoContainer = styled.section`
     .hp {
       top: 56.5vw;
     }
-    .car-picture {
+    .porsche {
       left: 50px;
       top: 65vw;
       width: 85vw;
       height: 26vw;
+    }
+    .land-rover {
+      left: 50px;
+      top: 58vw;
+      width: 85vw;
+      height: 36vw;
     }
   }
 `;

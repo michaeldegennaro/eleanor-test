@@ -31,9 +31,11 @@ export const Heading = styled.header`
     top: 50px;
   }
   @media (max-width: 1030px) {
+    left: -4vw;
+
     img {
       width: 31vw;
-      left: -0.8rem;
+      left: 4vw;
       position: absolute;
       left: 14vw;
       top: -65px;

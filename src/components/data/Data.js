@@ -6,6 +6,7 @@ export const carArray = [
     hp: "443",
     speed: "3.2",
     picture: "./images/porsche-flipped.png",
+    name: "porsche",
   },
   {
     make: "Land Rover",
@@ -14,5 +15,6 @@ export const carArray = [
     hp: "397",
     speed: "4.2",
     picture: "./images/range-rover.png",
+    name: "land-rover",
   },
 ];
