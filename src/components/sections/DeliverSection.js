@@ -15,11 +15,12 @@ import { deliverRenderAnimations } from "../gsap/Animations";
 
 export const DeliverSection = () => {
   const size = useWindowSize();
+  let a = window.screen.width;
 
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    if (size.width > 1070) {
+    if (a > 1070) {
       gsap.set(".map", { opacity: 0, x: "50%" });
       gsap.set(".car-deliver", { opacity: 0, x: "-50%" });
     }

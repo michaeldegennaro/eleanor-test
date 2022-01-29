@@ -7,6 +7,7 @@ import { TradeSection } from "./components/sections/TradeSection";
 import { BoxSection } from "./components/sections/BoxSection";
 import { CustomerSection } from "./components/sections/CustomerSection";
 import { Footer } from "./components/layout/Footer";
+import useWindowSize from "./hooks/WindowSize";
 
 const theme = {
   colors: {

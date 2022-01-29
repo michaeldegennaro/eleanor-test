@@ -62,7 +62,7 @@ export const selectRenderAnimations = () => {
     x: "0%",
     opacity: 1,
   });
-  gsap.to(".car-info, .favicon", {
+  gsap.to(".a, .car-info, .favicon", {
     scrollTrigger: scrollTriggerSelect,
     duration: 0.5,
     y: "0%",
@@ -93,7 +93,7 @@ export const selectStateChangeAnimations = () => {
 };
 export const selectStateChangeInAnimations = () => {
   gsap.fromTo(
-    ".car-info, .favicon",
+    ".car-info, .favicon, .a",
     { y: "100px", opacity: 0, duration: 0.3 },
     {
       duration: 0.3,

@@ -16,7 +16,6 @@ import gsap from "gsap";
 
 export const HeroSection = () => {
   const size = useWindowSize();
-
   const boxRef = useRef();
 
   // wait until DOM has been rendered

@@ -18,7 +18,7 @@ import { carArray } from "../data/Data";
 export const SelectSection = () => {
   let [currentCar, setCurrentCar] = useState(carArray[0]);
   const size = useWindowSize();
-
+  let a = window.screen.width;
   gsap.registerPlugin(ScrollTrigger);
 
   const handleClick = () => {
@@ -28,12 +28,12 @@ export const SelectSection = () => {
   };
 
   useEffect(() => {
-    if (size.width > 1070) {
+    if (a > 1070) {
       gsap.set(".info-container", { opacity: 0, x: "10%" });
       gsap.set(".car-picture", { opacity: 0, x: "50%" });
     }
     gsap.set(".header, .text", { opacity: 0, y: "-50%" });
-    gsap.set(".car-info, .favicon", { opacity: 0, y: "-10%" });
+    gsap.set(".car-info, .favicon, .a", { opacity: 0, y: "-10%" });
   }, []);
 
   const firstUpdate = useRef(true);
@@ -47,7 +47,7 @@ export const SelectSection = () => {
 
   useEffect(() => {
     selectRenderAnimations();
-  }, [size]);
+  }, [a]);
 
   return (
     <StyledSelectSection>
@@ -66,13 +66,13 @@ export const SelectSection = () => {
         <p className="car-info">{currentCar.model}</p>
         <article>
           <img className="favicon mpg" src="./images/mpg.png" />
-          <h3 className="car-info-mpg">{currentCar.mpg}</h3>
+          <h3 className="car-info-mpg a">{currentCar.mpg}</h3>
 
           <img className="favicon speed" src="./images/speed.png" />
-          <h3 className="car-info-speed">{currentCar.hp}</h3>
+          <h3 className="car-info-speed a">{currentCar.hp}</h3>
 
           <img className="favicon hp" src="./images/hp.png" />
-          <h3 className="car-info-hp">{currentCar.speed}</h3>
+          <h3 className="car-info-hp a">{currentCar.speed}</h3>
           <img className="car-picture" src={currentCar.picture} />
         </article>
       </CarInfoContainer>
