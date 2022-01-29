@@ -17,7 +17,10 @@ export const StyledBoxSection = styled.section`
     top: 170vw;
   }
   @media (max-width: 600px) {
-    top: 25vw;
+    top: 65vw;
+  }
+  @media (max-width: 400px) {
+    top: 125vw;
   }
 `;
 

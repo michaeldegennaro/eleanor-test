@@ -93,16 +93,16 @@ export const PhoneWrapper = styled.div`
   }
   @media (max-width: 1070px) {
     position: static;
-    width: 40vw;
+    width: 280px;
     justify-self: center;
     align-self: center;
     margin-bottom: -55vw;
   }
   @media (max-width: 800px) {
-    margin-bottom: -25vw;
+    margin-bottom: -35vw;
   }
   @media (max-width: 610px) {
-    margin-bottom: 40vw;
+    margin-bottom: -15vw;
   }
 `;
 
@@ -138,9 +138,9 @@ export const MapWrapper = styled.div`
     top: 35vw;
   }
   @media (max-width: 800px) {
-    top: 25vw;
+    top: 28vw;
   }
   @media (max-width: 610px) {
-    top: -9vw;
+    top: 19vw;
   }
 `;

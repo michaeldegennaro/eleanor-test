@@ -73,13 +73,13 @@ export const selectRenderAnimations = () => {
 
 export const selectStateChangeAnimations = () => {
   gsap.fromTo(
-    ".car-info, .favicon",
+    ".car-info, .favicon, .a",
     {
       duration: 0.3,
       y: "0%",
       opacity: 1,
     },
-    { y: "-100px", opacity: 0, duration: 0.3 }
+    { y: "-60px", opacity: 0, duration: 0.3 }
   );
   gsap.fromTo(
     ".car-picture",
@@ -94,7 +94,7 @@ export const selectStateChangeAnimations = () => {
 export const selectStateChangeInAnimations = () => {
   gsap.fromTo(
     ".car-info, .favicon, .a",
-    { y: "100px", opacity: 0, duration: 0.3 },
+    { y: "60px", opacity: 0, duration: 0.3 },
     {
       duration: 0.3,
       y: "0%",

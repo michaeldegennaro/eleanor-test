@@ -7,7 +7,6 @@ import { useState, useEffect, useRef } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import useWindowSize from "../../hooks/WindowSize";
 import {
   selectRenderAnimations,
   selectStateChangeAnimations,
@@ -17,18 +16,21 @@ import { carArray } from "../data/Data";
 
 export const SelectSection = () => {
   let [currentCar, setCurrentCar] = useState(carArray[0]);
-  const size = useWindowSize();
-  let a = window.screen.width;
+  let screenWidth = window.screen.width;
   gsap.registerPlugin(ScrollTrigger);
 
   const handleClick = () => {
-    currentCar.make === "Porsche"
-      ? setCurrentCar(carArray[1])
-      : setCurrentCar(carArray[0]);
+    selectStateChangeAnimations();
+    setTimeout(() => {
+      currentCar.make === "Porsche"
+        ? setCurrentCar(carArray[1])
+        : setCurrentCar(carArray[0]);
+      selectStateChangeInAnimations();
+    }, 200);
   };
 
   useEffect(() => {
-    if (a > 1070) {
+    if (screenWidth > 1070) {
       gsap.set(".info-container", { opacity: 0, x: "10%" });
       gsap.set(".car-picture", { opacity: 0, x: "50%" });
     }
@@ -42,12 +44,12 @@ export const SelectSection = () => {
       firstUpdate.current = false;
       return;
     }
-    selectStateChangeInAnimations();
+    //selectStateChangeInAnimations();
   }, [currentCar]);
 
   useEffect(() => {
     selectRenderAnimations();
-  }, [a]);
+  }, [screenWidth]);
 
   return (
     <StyledSelectSection>

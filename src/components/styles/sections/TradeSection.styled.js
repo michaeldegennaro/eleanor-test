@@ -18,7 +18,7 @@ export const StyledTradeSection = styled.section`
     top: 70vw;
   }
   @media (max-width: 600px) {
-    top: -25vw;
+    top: 25vw;
   }
 `;
 

@@ -8,25 +8,21 @@ export const StyledSelectSection = styled.section`
   .flipped {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    position: relative;
-    right: 5vw;
-    top: 30px;
+    position: absolute;
+    right: 90px;
+    top: 10px;
   }
   .arrow {
-    position: relative;
-    left: 27.5vw;
-    bottom: 16px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
   }
   @media (max-width: 1070px) {
     .flipped {
-      position: relative;
       right: 12vw;
-      top: 30px;
     }
     .arrow {
-      position: relative;
       left: 82.5vw;
-      bottom: 16px;
     }
   }
 `;

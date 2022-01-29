@@ -16,7 +16,10 @@ export const StyledCustomerSection = styled.section`
     top: 350vw;
   }
   @media (max-width: 600px) {
-    top: 140vw;
+    top: 190vw;
+  }
+  @media (max-width: 400px) {
+    top: 255vw;
   }
 `;
 
@@ -183,6 +186,6 @@ export const CustomerFooterSection = styled.section`
     bottom: -120vw;
   }
   @media (max-width: 500px) {
-    bottom: -90vw;
+    left: -180px;
   }
 `;

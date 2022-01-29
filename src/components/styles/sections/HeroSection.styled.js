@@ -32,13 +32,22 @@ export const Heading = styled.header`
   }
   @media (max-width: 1030px) {
     left: -4vw;
-
     img {
       width: 31vw;
       left: 4vw;
       position: absolute;
       left: 14vw;
       top: -65px;
+    }
+  }
+  @media (max-width: 400px) {
+    left: -4vw;
+    img {
+      width: 31vw;
+      left: 4vw;
+      position: absolute;
+      left: 14vw;
+      top: -15px;
     }
   }
 `;
@@ -140,7 +149,7 @@ export const Shadow = styled.div`
   background-color: black;
   position: absolute;
   width: 341px;
-  height: 700.43px;
+  height: 75vh;
   left: 74vw;
   top: 19vh;
   mix-blend-mode: normal;
