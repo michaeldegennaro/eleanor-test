@@ -178,9 +178,23 @@ export const CustomerFooterSection = styled.section`
     top: 10px;
     margin: 25px 0px 0px 0px;
   }
+  div {
+    position: absolute;
+    right: 10px;
+    top: 23px;
+  }
+  p {
+    display: inline;
+    margin: 10px;
+    font-family: Optima, sans-serif;
+    font-size: 1.1vw;
+  }
   @media (max-width: 1070px) {
     bottom: -140vw;
     left: -160px;
+    div {
+      display: none;
+    }
   }
   @media (max-width: 800px) {
     bottom: -120vw;

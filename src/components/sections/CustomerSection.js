@@ -53,6 +53,11 @@ export const CustomerSection = () => {
         <CarWrapper className="car-customer" />
         <CustomerFooterSection>
           <img src="./images/header-black.png" />
+          <div className="link-container">
+            <p>About Us</p>
+            <p>Terms Of Use</p>
+            <p>FAQ</p>
+          </div>
         </CustomerFooterSection>
       </StyledCustomerSection>
     </>
