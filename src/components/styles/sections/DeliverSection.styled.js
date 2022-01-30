@@ -18,6 +18,9 @@ export const StyledDeliverSection = styled.section`
   @media (max-width: 600px) {
     top: 35vw;
   }
+  @media (max-width: 400px) {
+    top: 38vw;
+  }
 `;
 
 export const DeliverInfoContainer = styled.section`
