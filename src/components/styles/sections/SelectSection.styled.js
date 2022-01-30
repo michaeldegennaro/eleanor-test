@@ -5,6 +5,7 @@ export const StyledSelectSection = styled.section`
   margin-top: 20px;
   height: 90vh;
   text-align: start;
+  overflow-x: clip;
   .flipped {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -24,6 +25,8 @@ export const StyledSelectSection = styled.section`
     .arrow {
       left: 82.5vw;
     }
+  }
+  @media (max-width: 500px) {
   }
 `;
 
